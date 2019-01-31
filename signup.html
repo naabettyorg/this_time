@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!--<link href="css/design.css" rel="stylesheet" />-->
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--<link rel="script" href="main.js" type="text/javascript">-->
+    <title>Register Now</title>
+
+</head>
+<body style="background-image: url('assets/images/audience-band-concert-1306791.jpg');">
+<h3 style="font-size: x-large; font-style: oblique;text-align: center">
+    Become a Member</h3>
+<div>
+    <div class="row">
+
+        <div class="col-xs-12
+                col-sm-8
+                col-md-6
+                col-lg-4" style="margin-right: 45px;">
+            <div class="box">
+                <div class="">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <form action="transition.html" name="result">
+
+                                <fieldset class="w3-container">
+                                    <legend>
+                                        <small style="font-size: 13px; color: #c69500">
+                                            Personal Information
+                                        </small>
+                                    </legend>
+                                    <div class="form-group">
+                                        <div class="form-wrapper">
+                                            <label for="firstName">First
+                                                Name</label>
+                                            <input type="text"
+                                                   class="form-control"
+                                                   id="firstName">
+                                        </div>
+                                        <div class="form-wrapper">
+                                            <label for="lastName">Last
+                                                Name</label>
+                                            <input type="text"
+                                                   class="form-control"
+                                                   id="lastName">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-wrapper">
+                                        <div class="form-wrapper">
+                                            <label>Upload Profile Image</label>
+
+                                        </div>
+
+                                        <div class="form-wrapper">
+                                            <div class="">
+                                                <input type='file'
+                                                       accept="image/*"
+                                                       onchange="loadFile(event);"
+                                                       class="form-control"/>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="form-wrapper">
+                                        <label for="email">Email</label>
+                                        <input type="text" class="form-control"
+                                               id="email">
+                                    </div>
+                                    <div class="form-wrapper">
+                                        <label for="password">Password</label>
+                                        <input type="password"
+                                               class="form-control"
+                                               id="password">
+                                    </div>
+                                    <div class="form-wrapper">
+                                        <label for="confirmPassword">Confirm
+                                            Password</label>
+                                        <input type="password"
+                                               class="form-control"
+                                               id="confirmPassword">
+                                    </div>
+                                    <div class="">
+
+
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" required> I
+                                            accept the Terms of Use & Privacy
+                                            Policy.
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </fieldset>
+
+                                <button type="submit" onclick="saveData()">
+                                    Register Now
+
+                                </button>
+                            </form>
+
+                            <hr>
+                            <div class="row">
+                                <h4><a href="#">Sign In</a> if you already have
+                                    an account</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12
+                col-sm-8
+                col-md-6
+                col-lg-4" style="margin-left: 45px;">
+            <div class="box">
+                <!--<img id="output" src="http://placehold.it/180"-->
+                <!--alt="your image"/>-->
+                <div class="wrapper">
+
+                    <div class="">
+                        <fieldset class="">
+                            <legend>
+                                <small style="font-size: 13px; color: #c69500">
+                                    Business Information
+                                </small>
+                            </legend>
+                            <div class="form-wrapper">
+                                <label for="nameOfBusiness">Name Of
+                                    Business</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="nameOfBusiness">
+                            </div>
+                            <div class="form-wrapper">
+                                <label for="location">Location of
+                                    Business</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="location">
+                            </div>
+                            <div class="form-wrapper">
+                                <label for="telephone">Business
+                                    Phone</label>
+                                <input type="tel"
+                                       class="form-control"
+                                       id="telephone">
+                            </div>
+                            <div class="form-wrapper">
+                                <label for="specialty">Specialty</label>
+                                <input type="text" value="Barber"
+                                       class="form-control"
+                                       id="specialty">
+                            </div>
+                            <div class="form-wrapper ">
+                                <label for="experience">Years of
+                                    Work Experience</label>
+                                <input type="number"
+                                       class="form-control"
+                                       id="experience">
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container ">
+        <!--<div class="col-md-6">-->
+        <!--<div class="wrapper">-->
+        <!--<div class="inner">-->
+        <!--<form action="transition.html" name="result">-->
+        <!--<h3 style="font-size: x-large; font-style: oblique">Become a Member</h3>-->
+        <!--<div class="form-group">-->
+        <!--<div class="form-wrapper">-->
+        <!--<label for="firstName">First Name</label>-->
+        <!--<input type="text" class="form-control" id="firstName">-->
+        <!--</div>-->
+        <!--<div class="form-wrapper">-->
+        <!--<label for="lastName">Last Name</label>-->
+        <!--<input type="text" class="form-control" id="lastName">-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="form-wrapper">-->
+        <!--<div class="form-wrapper">-->
+        <!--<label>Upload Profile Image</label>-->
+
+        <!--</div>-->
+
+        <!--<div class="form-wrapper">-->
+        <!--<div class="">-->
+        <!--<input type='file' accept="image/*" onchange="loadFile(event);" class="form-control" />-->
+        <!--<img id="output" src="http://placehold.it/180" alt="your image" />-->
+        <!--</div>-->
+        <!--</div>-->
+
+
+        <!--</div>-->
+
+        <!--<div class="form-wrapper">-->
+        <!--<label for="email">Email</label>-->
+        <!--<input type="text" class="form-control" id="email">-->
+        <!--</div>-->
+        <!--<div class="form-wrapper">-->
+        <!--<label for="password">Password</label>-->
+        <!--<input type="password" class="form-control" id="password">-->
+        <!--</div>-->
+        <!--<div class="form-wrapper">-->
+        <!--<label for="confirmPassword">Confirm Password</label>-->
+        <!--<input type="password" class="form-control" id="confirmPassword">-->
+        <!--</div>-->
+        <!--<div class="">-->
+        <!--<fieldset class="form-wrapper" data-role="collapsible">-->
+        <!--<legend>Business Information</legend>-->
+        <!--<div class="form-wrapper">-->
+        <!--<label for="nameOfBusiness">Name Of Business</label>-->
+        <!--<input type="text" class="form-control" id="nameOfBusiness">-->
+        <!--</div>-->
+        <!--<div class="form-wrapper">-->
+        <!--<label for="location">Location of Business</label>-->
+        <!--<input type="text" class="form-control" id="location">-->
+        <!--</div>-->
+        <!--<div class="form-wrapper">-->
+        <!--<label for="telephone">Business Phone</label>-->
+        <!--<input type="tel" class="form-control" id="telephone">-->
+        <!--</div>-->
+        <!--<div class="form-wrapper">-->
+        <!--<label for="specialty"  >Specialty</label>-->
+        <!--<input type="text" value="Barber" class="form-control" id="specialty">-->
+        <!--</div>-->
+        <!--<div class="form-wrapper ">-->
+        <!--<label for="experience">Years of Work Experience</label>-->
+        <!--<input type="number" class="form-control" id="experience">-->
+        <!--</div>-->
+        <!--</fieldset>-->
+
+        <!--</div>-->
+        <!--<div class="checkbox">-->
+        <!--<label>-->
+        <!--<input type="checkbox" required> I accept the Terms of Use & Privacy Policy.-->
+        <!--<span class="checkmark"></span>-->
+        <!--</label>-->
+        <!--</div>-->
+        <!--<button type="submit" onclick="saveData()" >Register Now-->
+
+        <!--</button>-->
+        <!--</form>-->
+
+        <!--<hr>-->
+        <!--<div class="row">-->
+        <!--<h4><a href="#">Sign In</a> if you already have an account</h4>-->
+        <!--</div>-->
+
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+
+    </div>
+</div>
+<script>
+
+
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    var loadFile = function (event) {
+        var output = document.getElementById('output');
+        output.src = URL.createObjectURL(event.target.files[0]);
+    };
+
+
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+</html>

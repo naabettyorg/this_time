@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js"></script>
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <title>Register Today</title>
+</head>
+<body>
+
+
+<form action="transition.html" class="w3-col">
+        <div class="w3-row-padding">
+    <div class="w3-third">
+        <fieldset class="w3-container">
+            <legend>
+                <small style="font-size: 13px; color: #c69500">
+                    Personal Information
+                </small>
+            </legend>
+            <div class="form-group">
+                <div class="form-wrapper">
+                    <label for="firstName">First
+                        Name</label>
+                    <input type="text"
+                           class="form-control"
+                           id="firstName">
+                </div>
+                <div class="form-wrapper">
+                    <label for="lastName">Last
+                        Name</label>
+                    <input type="text"
+                           class="form-control"
+                           id="lastName">
+                </div>
+            </div>
+
+            <div class="form-wrapper">
+                <div class="form-wrapper">
+                    <label>Upload Profile Image</label>
+
+                </div>
+
+                <div class="form-wrapper">
+                    <div class="">
+                        <input type='file'
+                               accept="image/*"
+                               onchange="readURL(this);"
+                               class="form-control"/>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="form-wrapper">
+                <label for="email">Email</label>
+                <input type="text" class="form-control"
+                       id="email">
+            </div>
+            <div class="form-wrapper">
+                <label for="password">Password</label>
+                <input type="password"
+                       class="form-control"
+                       id="password">
+            </div>
+            <div class="form-wrapper">
+                <label for="confirmPassword">Confirm
+                    Password</label>
+                <input type="password"
+                       class="form-control"
+                       id="confirmPassword">
+            </div>
+            <div class="">
+
+
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="w3-third">
+        <fieldset class="">
+            <legend>
+                <small style="font-size: 13px; color: #c69500">
+                    Business Information
+                </small>
+            </legend>
+            <div class="form-wrapper">
+                <label for="nameOfBusiness">Name Of
+                    Business</label>
+                <input type="text"
+                       class="form-control"
+                       id="nameOfBusiness">
+            </div>
+            <div class="form-wrapper">
+                <label for="location">Location of
+                    Business</label>
+                <input type="text"
+                       class="form-control"
+                       id="location">
+            </div>
+            <div class="form-wrapper">
+                <label for="telephone">Business
+                    Phone</label>
+                <input type="tel"
+                       class="form-control"
+                       id="telephone">
+            </div>
+            <div class="form-wrapper">
+                <label for="specialty">Specialty</label>
+                <input type="text" value="Barber"
+                       class="form-control"
+                       id="specialty">
+            </div>
+            <div class="form-wrapper ">
+                <label for="experience">Years of
+                    Work Experience</label>
+                <input type="number"
+                       class="form-control"
+                       id="experience">
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="w3-third">
+        <p>Uploaded Picture</p>
+        <img id="blah" src="http://placehold.it/180" alt="your image"/>
+
+    </div>
+</div>
+
+
+
+<hr>
+    <div class=" container">
+    <label>
+        <input type="checkbox" required> I
+        accept the Terms of Use & Privacy
+        Policy.
+        <span class="checkmark"></span>
+    </label>
+</div>
+<button type="submit" onclick="saveData()">
+    Register Now
+
+</button>
+
+</form>
+
+
+
+</body>
+</html>
