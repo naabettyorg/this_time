@@ -28,8 +28,10 @@ function readURL(input) {
         };
 
 
+
         let savedInfo = localStorage.setItem('info', JSON.stringify(info));
-        savedInfo.append(info)
+        savedInfo.append(info);
+        savedInfo.pushStack(info)
     }
 
     function transition(){
@@ -44,7 +46,9 @@ function readURL(input) {
       document.getElementById('fullname').innerHTML = fullname.toString();
 
       document.getElementById('email').innerHTML = localStorage.getItem('email');
-      document.getElementById('age').innerHTML = localStorage.getItem('age');
+      document.getElementById('bname').innerHTML = localStorage.getItem('business_name');
+      document.getElementById('location').innerHTML = localStorage.getItem('location');
+
       document.getElementById('specialty').innerHTML = localStorage.getItem('specialty');
       document.getElementById('experience').innerHTML = localStorage.getItem('experience').concat(' Years');
       document.getElementById('telephone').innerHTML = localStorage.getItem('telephone');
